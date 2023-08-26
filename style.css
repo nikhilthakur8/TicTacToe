@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;;
+    font-family: 'Ubuntu';
+    font-family: 'Gluten', cursive;
 }
 nav{
     background-color: purple;
@@ -35,7 +38,7 @@ nav li{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 5px solid black;
     border-right: 0;
     border-bottom: 0;
     font-size: 7vw;
@@ -69,14 +72,14 @@ nav li{
     cursor: pointer;
     border: none;
     font-size: 1.2rem;
-    box-shadow: 1px 3px 2px  black;
+    box-shadow: 0px 3px 2px  black;
     transform: translateY(0);
     transition: transform 0.2s, box-shadow 0.2s;
     
 }
 #reset:hover{
     transform: translateY(-2px);
-    box-shadow: 1px 5px 2px  #000;
+    box-shadow: 0px 5px 2px  #000;
 }
 #reset:active{
     transform: translateY(0);
@@ -94,12 +97,25 @@ nav li{
 .line{
     position: absolute;
     width: 0vw;
-    height:4px;
+    height:9px;
+    border-radius: 15px;
     transform: translate(0vw,0vw) rotate(0deg);
     background-color: rgb(146, 39, 146);
     transition: width 0.6s ease-in-out;
 }
 
+footer {
+    background-color: purple;
+    color: white;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: px; */
+    padding: 3px;
+    text-align: center;
+    font-size: 1.5rem;
+}
 @media screen and (max-width: 950px)
 {
     .gameContainer{
