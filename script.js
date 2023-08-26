@@ -8,8 +8,8 @@ let isGameOver = false;
 let changeTurn = ()=>{
     return turn === "X" ? "O":"X"
 }
-// music.play();
-// music.volume = 0.1; 
+music.play();
+music.volume = 0.1; 
 // Function for check win
 const checkWin=()=>{
     let boxtext = document.querySelectorAll(".boxText");

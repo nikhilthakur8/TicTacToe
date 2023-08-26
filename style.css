@@ -66,13 +66,21 @@ nav li{
     border-radius: 20px;
     background-color: purple;
     color: white;
-    font-size: 1.2rem;
-    box-shadow: 2px 2px 9px  black;
     cursor: pointer;
     border: none;
+    font-size: 1.2rem;
+    box-shadow: 1px 3px 2px  black;
+    transform: translateY(0);
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+}
+#reset:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 5px 2px  #000;
 }
 #reset:active{
-    background-color: rgb(191, 128, 191);
+    transform: translateY(0);
+    box-shadow: none;
 }
 
 .bl-0{    
