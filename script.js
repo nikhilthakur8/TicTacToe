@@ -31,12 +31,12 @@ const checkWin=()=>{
         && (boxtext[e[1]].innerText===boxtext[e[2]].innerText) 
         && (boxtext[e[0]].innerText!==""))
         {
-            document.getElementsByClassName("info")[0].innerText = `${boxtext[e[0]].innerText} Won !!!`; 
+            document.getElementsByClassName("info")[0].innerText = `${boxtext[e[0]].innerText} Victory✌🏼✌🏼`; 
             isGameOver = true;
             
             if(isSmallerThan950px===true){
-                document.querySelector(".line").style.transform = `translate(${e[3]*2}vw,${e[4]*2}vw) rotate(${e[5]}deg)`;
-                document.querySelector(".line").style.width= "60vw";
+                document.querySelector(".line").style.transform = `translate(${e[3]*2.5}vw,${e[4]*2.5}vw) rotate(${e[5]}deg)`;
+                document.querySelector(".line").style.width= "75vw";
             }
             else {
                 document.querySelector(".line").style.transform = `translate(${e[3]}vw,${e[4]}vw) rotate(${e[5]}deg)`;
@@ -45,11 +45,12 @@ const checkWin=()=>{
             winTing.play();
             setTimeout(gameOver,2500);
         }
-        else if (count===9){
+        else {if (count===9 && !isGameOver){
+            isGameOver= true;
             winTing.play();
             document.getElementsByClassName("info")[0].innerText=`Tie b/w X and O`;
             setTimeout(gameOver,2500);
-        }
+        }}
     })
 }
 
@@ -65,8 +66,10 @@ Array.from(boxes).forEach(element =>{
             element.style.backgroundColor="rgba(202, 73, 202, 0.199)";
             turn = changeTurn();
             checkWin();
-            ting.play();
-            document.getElementsByClassName("info")[0].innerText=`Turn of ${turn}`;
+            if(!isGameOver){
+                ting.play();
+                document.getElementsByClassName("info")[0].innerText=`Turn of ${turn}`;
+            }
         }
     })
 })

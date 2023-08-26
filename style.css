@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./font folder/League-ThinInline.otf') format('truetype');
+    /* You can include additional formats (e.g., woff, woff2) for better browser support */
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu';
-    font-family: 'Gluten', cursive;
+    font-family: 'CustomFont';
 }
 nav{
     background-color: purple;
@@ -59,7 +60,7 @@ nav li{
     font-size: 1.4rem;
     padding-block: 10px;
     font-weight: bolder;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-align: center;
 }
 #reset{
@@ -111,10 +112,10 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* height: px; */
+    height: 20px;
     padding: 3px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 @media screen and (max-width: 950px)
 {
@@ -124,6 +125,10 @@ footer {
     .gameInfo{
         margin-block: 20vw;
     }
+    .gameInfo h1{
+        width: 100vw;
+        text-align: center;
+    }
     .gameInfo{
         font-size: 0.75rem;
     }
@@ -131,7 +136,7 @@ footer {
         font-size: 20vw;
     }
     .container { 
-        grid-template-rows: repeat(3, 20vw);
-        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 25vw);
+        grid-template-columns: repeat(3, 25vw);
     }
 }
