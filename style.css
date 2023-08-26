@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'CustomFont';
     src: url('./font folder/League-ThinInline.otf') format('truetype');
-    /* You can include additional formats (e.g., woff, woff2) for better browser support */
 }
 *{
     margin: 0;
     padding: 0;
     font-family: 'CustomFont';
+    -webkit-tap-highlight-color: transparent;
 }
 nav{
     background-color: purple;
@@ -66,7 +66,7 @@ nav li{
 #reset{
     width: 40%;
     margin-inline: auto;
-    padding: 7px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: purple;
     color: white;
