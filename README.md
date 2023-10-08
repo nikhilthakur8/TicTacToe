@@ -7,7 +7,7 @@ This is a simple implementation of the classic Tic Tac Toe game using HTML, CSS,
   <br>
 - Winning detection and announcement.
   <br>
-  # Demo 
+# Demo 
 You can play the game live here: [Tic Tac Toe Demo](https://nikhiltictactoe.netlify.app/)
 # Installation
 You can Clone this repository :
