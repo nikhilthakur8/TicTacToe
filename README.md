@@ -12,4 +12,4 @@ You can play the game live here: [Tic Tac Toe Demo](https://nikhiltictactoe.netl
 # Installation
 You can Clone this repository :
 ```bash
-git clone https://github.com/nikhilthakur8/tic-tac-toe.git
+git clone https://github.com/nikhilthakur8/TicTacToe.git
